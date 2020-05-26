@@ -29,7 +29,7 @@ highsalaryrate<-arrange(rate,desc(salaryrate))
 View(head(highsalaryrate,10))
 View(highsalaryrate)
 
-table(sapply( (strsplit (salary$大職業別,"-") ), "[" ,  1))%>%
+table(sapply (strsplit (rate$大職業別,"-") , "[" ,  1))%>%
   View()
 
 #第二題
